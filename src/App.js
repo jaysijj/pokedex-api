@@ -17,25 +17,39 @@ function App() {
   const [loading, setLoading] = useState(false)
   const generationName = ["Kanto", "Johto", "Hoenn", "Sinnoh", "Unova", "Kalos", "Alola", "Galar", "Paldea"]
 
+  // useEffect(() => {
+  //   const fetchPokemons = async () => {
+  //     try{
+  //       const dados = await getPokemons(pokemonInicial, pokemonFinal)
+  //       const pokedex = dados.results
+  //       let allPkm = []
+  //       if (pokedex.length>0){
+  //         for (let i=0; i<pokedex.length; i++){
+  //           let dados = await getPokemonsByLink(pokedex[i].url)
+  //           allPkm.push(dados)
+  //         }
+  //         setLoading(true)
+  //         setPokemonsByLink(allPkm)
+  //       }
+
+  //     } catch (error){
+  //       console.log("Ocorreu um erro ao carregar getchPokemons link: ",error)
+  //     }
+  //   }
+  //   fetchPokemons()
+  // }, [])
+
   useEffect(() => {
     const fetchPokemons = async () => {
       try{
-        const dados = await getPokemons(pokemonInicial, pokemonFinal)
-        const pokedex = dados.results
-        let allPkm = []
-        if (pokedex.length>0){
-          for (let i=0; i<pokedex.length; i++){
-            let dados = await getPokemonsByLink(pokedex[i].url)
-            allPkm.push(dados)
-          }
-          setLoading(true)
-          setPokemonsByLink(allPkm)
+        const dados = await getPokemonsDados(pokemonFinal)
+        setPokemonsByLink(dados)
+        setLoading(true)
         }
-
-      } catch (error){
-        console.log("Ocorreu um erro ao carregar getchPokemons link: ",error)
-      }
-    }
+        catch (error){
+          console.log("Ocorreu um erro ao carregar getchPokemons link: ",error)
+        }
+      } 
     fetchPokemons()
   }, [])
 
@@ -59,8 +73,9 @@ function App() {
 
   // useEffect(() => {
   //   const fetchPokemons = async () => {
-  //     const data = await getPokemonsDados()
-  //     setTodosPokemonsIniciais(data)
+  //     const data = await getPokemonsDados(pokemonFinal)
+  //     setPokemonsByLink(data)
+  //     setLoading(true)
   //   }
   //   fetchPokemons()
   // }, [])

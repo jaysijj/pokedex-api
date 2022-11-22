@@ -24,15 +24,15 @@ export const getPokemonsByLink = async (link) => {
     }).then(resp => resp.json())
   return pokemons
 }
-export const getPokemonsDados = async () => {
+
+export const getPokemonsDados = async (final) => {
   let allPokemons = []
-  for (let i = 1; i <= 151; i++) {
+  for (let i = 1; i <= final; i++) {
     let pokemons = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`, {
       method: 'GET'
     }).then(resp => resp.json())
     allPokemons.push(pokemons)
   }
-  // console.log(allPokemons)
   return allPokemons
 }
 

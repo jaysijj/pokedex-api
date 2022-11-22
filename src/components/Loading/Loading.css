@@ -1,0 +1,29 @@
+/* .loading {
+  background-color: rgb(256, 256, 256, 0);
+
+position: absolute;
+left: 50%;
+margin-left: -125px;
+bottom: 50%;
+margin-bottom: -125px;
+width: 250px;
+height: 250px;
+} */
+
+.loading {
+  background-color: white;
+  position: absolute;
+  /* left: 50%; 
+  margin-left: -125px;
+  bottom: 50%;  */
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading img {
+  width: 200px;
+  height: 200px;
+}

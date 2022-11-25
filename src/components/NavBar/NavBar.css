@@ -1,6 +1,11 @@
 nav {
   background-color: rgb(38, 50, 56);
   border: 25px 0;
+  /* width: 200px !important; */
+}
+
+.container-fluid {
+  /* width: 200px; */
 }
 
 .nav-link {

@@ -1,0 +1,70 @@
+.paginacaoFather {
+  margin: 130px 0;
+}
+
+.paginacaoButton {
+  display: flex;
+  justify-content: center;
+}
+
+.loadingImg__father img {
+  width: 100px;
+}
+
+.loadingArrow__father:hover {
+  transform: scale(1.3);
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+/* .paginacaoFather {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+  width: 100%;
+}
+
+.paginacaoButton {
+  border: 0;
+  background-color: transparent;
+  position: absolute;
+
+}
+
+.loadingImg__father {
+  width: 100px;
+}
+
+.loadingImg {
+  width: 100%;
+}
+
+
+.loadingArrow__father {
+  position: absolute;
+}
+
+.loadingArrow__father:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+  position: absolute;
+} */
+
+/* .paginacaoButton:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+  position: absolute;
+
+} */
+
+
+.paginacaoButton__left {
+  left: 10px;
+}
+
+.paginacaoButton__right {
+  right: 10px;
+}
+
+/* right: 50%;
+  transform: translate(-50%, 0); */

@@ -1,7 +1,13 @@
 import './NavBar.css'
 import {Button, Container, Form, Nav, Navbar} from 'react-bootstrap'
 
-const NavBar = ({setSprit, sprit, setBuscadorPkm, setCurrentGeneration}) => {
+const NavBar = ({setSprit, sprit, setBuscadorPkm, setCurrentGeneration, setPaginacao, generation, currentGeneration, setPokemonsAcumulados}) => {
+  // function ola() {
+  //   // console.log(generation[currentGeneration][1])
+  //   // console.log(currentGeneration)
+  //   setPaginacao(1)
+  // }
+  // ola()
   return(
 <Navbar bg="" expand="lg">
 <Container fluid>
@@ -12,19 +18,19 @@ const NavBar = ({setSprit, sprit, setBuscadorPkm, setCurrentGeneration}) => {
       className="me-auto my-2 my-lg-0"
       style={{ maxHeight: '150px' }}
       navbarScroll>
-      <Nav.Link href="#gen1" onClick={() => setCurrentGeneration("1")}>Gen 1</Nav.Link>
+      <Nav.Link href="#gen1" onClick={() => (setCurrentGeneration("1") || setPaginacao(generation["1"][0]))}>Gen 1</Nav.Link>
       {/* <Nav.Link href="#action1" onClick={() => setSprit("front_default")}>Frente</Nav.Link> */}
       {/* <Nav.Link href="#action2" onClick={() => setSprit("back_default")}>Costas</Nav.Link>
       <Nav.Link href="#" onClick={() => setSprit("front_shiny")}>Shiny
       </Nav.Link> */}
-      <Nav.Link href="#gen2" onClick={() => setCurrentGeneration("2")}>Gen 2</Nav.Link>
-      <Nav.Link href="#gen3" onClick={() => setCurrentGeneration("3")}>Gen 3
+      <Nav.Link href="#gen2" onClick={() => setCurrentGeneration("2") || setPaginacao(generation["2"][0])}>Gen 2</Nav.Link>
+      <Nav.Link href="#gen3" onClick={() => setCurrentGeneration("3") || setPaginacao(generation["3"][0])}>Gen 3
       </Nav.Link>
-      <Nav.Link href="#gen4" onClick={() => setCurrentGeneration("4")}>Gen 4
+      <Nav.Link href="#gen4" onClick={() => setCurrentGeneration("4") || setPaginacao(generation["4"][0])}>Gen 4
       </Nav.Link>
-      <Nav.Link href="#gen5" onClick={() => setCurrentGeneration("5")}>Gen 5
+      <Nav.Link href="#gen5" onClick={() => setCurrentGeneration("5") || setPaginacao(generation["5"][0])}>Gen 5
       </Nav.Link>
-      <Nav.Link href="#gen6" onClick={() => setCurrentGeneration("6")}>Gen 6
+      <Nav.Link href="#gen6" onClick={() => setCurrentGeneration("6") || setPaginacao(generation["6"][0])}>Gen 6
       </Nav.Link>
       {/* <Nav.Link href="#all" onClick={() => setCurrentGeneration("all")}>ALL
       </Nav.Link> */}

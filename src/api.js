@@ -25,9 +25,9 @@ export const getPokemonsByLink = async (link) => {
   return pokemons
 }
 
-export const getPokemonsDados = async (final) => {
+export const getPokemonsDados = async (inicio,final) => {
   let allPokemons = []
-  for (let i = 1; i <= final; i++) {
+  for (let i = inicio; i <= final; i++) {
     let pokemons = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`, {
       method: 'GET'
     }).then(resp => resp.json())
@@ -35,6 +35,16 @@ export const getPokemonsDados = async (final) => {
   }
   return allPokemons
 }
+// export const getPokemonsDados = async (final) => {
+//   let allPokemons = []
+//   for (let i = 1; i <= final; i++) {
+//     let pokemons = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`, {
+//       method: 'GET'
+//     }).then(resp => resp.json())
+//     allPokemons.push(pokemons)
+//   }
+//   return allPokemons
+// }
 
 
 

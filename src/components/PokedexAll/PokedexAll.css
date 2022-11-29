@@ -1,3 +1,12 @@
+.pokedexAll h1 {
+  text-align: center;
+  padding: 55px 0;
+  font-size: 45px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgb(38, 50, 56);
+}
+
 .pkmContainer__father {
   display: flex;
   flex-wrap: wrap;
@@ -45,7 +54,6 @@
 }
 
 .type {
-  border: solid white 2px;
   border: solid black 1px;
   font-weight: 0;
   font-size: 15px;
@@ -62,6 +70,10 @@
   justify-content: end;
 }
 
+/* .activePkm:hover {
+  transform: scale(1.5);
+  position: absolute;
+} */
 
 /* .parallax-effect-glare-scale {
   @include background;

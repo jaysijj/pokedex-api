@@ -2,7 +2,7 @@
 
 <img src="./public/assets/img/pokedex-pokemon.png"/>
 
-Clique para ter acesso: https://copa-do-mundo-api.vercel.app/
+Clique para ter acesso: pokedex-api-orcin.vercel.app
 
 ## Projeto
 

@@ -1,8 +1,8 @@
-# Pokedex pokemon API
-
-Clique para acesso: https://copa-do-mundo-api.vercel.app/
+# Pokedex pokemon API - (Projeto em desenvolvimento !!)
 
 <img src="./public/assets/img/pokedex-pokemon.png"/>
+
+Clique para ter acesso: https://copa-do-mundo-api.vercel.app/
 
 ## Projeto
 

@@ -1,12 +1,35 @@
-# Getting Started with Create React App
+# Pokedex Pokemon API
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Clique para acesso: https://copa-do-mundo-api.vercel.app/
 
-In the project directory, you can run:
+<img src="./public/assets/img/pokedex.png"/>
+
+## Projeto
+
+Desenvolvimento de uma plataforma web para listar, visualizar, buscar e favoritar pokemons. O projeto foi construído usando ReactJS. Todos os dados obtidos para construção da plataforma foram obtidos por meio de uma API REST chamada <a href="https://pokeapi.co/">PokéApi</a>
+
+### Tecnologias
+- React;
+- JavaScript;
+- HTML;
+- CSS;
+- <a href="https://react-bootstrap.github.io/">React Bootstrap</a>;
+- <a href="https://www.npmjs.com/package/react-parallax-tilt">React Tilt</a>
 
 ### `npm start`
+
+- Listar pokemons: Isso inclui os pokemons de todas as gerações, gerando requisições diferentes na API REST.
+- Listagem em grupos: É mostrado para o usuário um número limitado de pokemons na tela para agilizar o processo de requição de informações.
+- Renderização condicional: Requisitanto pequenos grupos de pokemons e a cada nova requisição a listagem anterior é somada a nova, aumentando o desempenho da plataforma.
+- Buscador de pokemons: Filtragem de pokemons de acordo com o nome digitado.
+- Efeito de carta para cada pokemon: Usando o component <a href="https://www.npmjs.com/package/react-parallax-tilt">React Tilt</a> para criar um efeito realista de inclinação ao passar o mouse em cima dos pokemons.
+- Barra de progresso para atributos: Criação de uma Progress Bar para mostrar os dados de atributos de cada pokemon de forma iterativa, usando animação para preenchimento.
+- Personalização do tipo: Visualização dos tipos de cada pokemon, adicionando cores únicas para cada.
+- Árvore de evolução: Mostra todo o ciclo de evolução dos pokemons.
+
+
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.

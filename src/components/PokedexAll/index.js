@@ -57,7 +57,7 @@ const PokedexAll = ({
               valor.sprites.front_default)) ||
             (valor.name === evolutions.thirdForm &&
               (thirdSprit =
-                valor.sprites.versions.front_default))}
+                valor.sprites.front_default))}
         </>
       ))
     }

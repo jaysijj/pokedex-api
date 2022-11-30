@@ -1,10 +1,8 @@
-# Pokedex Pokemon API
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Pokedex pokemon API
 
 Clique para acesso: https://copa-do-mundo-api.vercel.app/
 
-<img src="./public/assets/img/pokedex.png"/>
+<img src="./public/assets/img/pokedex-pokemon.png"/>
 
 ## Projeto
 
@@ -18,7 +16,7 @@ Desenvolvimento de uma plataforma web para listar, visualizar, buscar e favorita
 - <a href="https://react-bootstrap.github.io/">React Bootstrap</a>;
 - <a href="https://www.npmjs.com/package/react-parallax-tilt">React Tilt</a>
 
-### `npm start`
+### Funções
 
 - Listar pokemons: Isso inclui os pokemons de todas as gerações, gerando requisições diferentes na API REST.
 - Listagem em grupos: É mostrado para o usuário um número limitado de pokemons na tela para agilizar o processo de requição de informações.
